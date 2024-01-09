@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-   """Defines a function 
-      To convert a Python object to its JSON representation.
-   """
+"""Defines a string-to-JSON function."""
 import json
 
 
