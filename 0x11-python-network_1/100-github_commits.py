@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-script that takes 2 arguments in order to list 10 commits of 
-the repository "rails" by the user "rails".
-Print all commits by: `<sha>: <author name>` 
+script that takes 2 arguments in order to list 10 commits (from the most
+recent to oldest) of the repository "rails" by the user "rails".
+Print all commits by: `<sha>: <author name>` (one by line)
 The first argument will be the repository name
 The second argument will be the owner name
 """
@@ -26,4 +26,3 @@ if __name__ == "__main__":
                 print("{}: {}".format(obj.get('sha'), name))
     except ValueError as invalid_json:
         pass
-
